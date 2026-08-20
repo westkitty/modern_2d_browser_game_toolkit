@@ -21,7 +21,7 @@
       "capabilities": ["canvas2d", "variable-timing", "keyboard", "web-audio"],
       "summary": "Real-time dodging needs a pixel surface and frame-delta movement, plus blur/visibility handling so held keys and stalls stay honest.",
       "why": "Hazards move continuously and collision is spatial. Canvas 2D is the simplest pixel surface. Variable delta is enough for arcade feel if pathological frames are clamped; a fixed step is not required yet.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "03-fixed-step-platformer",

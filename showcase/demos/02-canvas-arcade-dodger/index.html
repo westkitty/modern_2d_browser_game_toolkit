@@ -5,16 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>High-DPI Canvas Arcade Dodger</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">02-canvas-arcade-dodger</p>
+      <p class="meta">02 · Canvas 2D · variable delta · DPR backing store</p>
       <h1>High-DPI Canvas Arcade Dodger</h1>
+      <p>Move with WASD or arrows. Survive the incoming stones. Frame delta is clamped; blur clears held keys.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <p>Score <strong id="score">0</strong></p>
+      <p>Best <strong id="best">0</strong></p>
+      <p>DPR <strong id="dpr">1</strong></p>
+      <button type="button" id="mute">Mute audio</button>
+      <button type="button" id="restart">Start / Restart</button>
     </section>
+    <div class="stage">
+      <canvas id="game" width="640" height="360" aria-label="Arcade dodger playfield"></canvas>
+      <p id="banner" class="banner" role="status">Press Start, then dodge.</p>
+    </div>
   </main>
   <script type="module" src="./main.js"></script>
 </body>
