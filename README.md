@@ -4,7 +4,7 @@ This repository contains:
 
 - the **architecture toolkit** (handbook, schemas, templates, and example contracts);
 - **toolkit validation tools** (linter, preflight, manifest validator, project-check runner, self-test);
-- **one showcase launcher** at `showcase/` (added in later commits);
+- **one showcase launcher** at `showcase/`;
 - **ten architecture demonstrations** that are independently runnable and reachable from that launcher.
 
 A requirement-driven architecture handbook plus executable guardrails for humans and AI coding agents building 2D browser games.
@@ -12,6 +12,30 @@ A requirement-driven architecture handbook plus executable guardrails for humans
 ## Governing rule
 
 **The game's requirements determine the architecture.** Start with the simplest implementation that satisfies the real behavior/quality target. Activate advanced systems only when requirements, existing architecture, profiling, scale, browser constraints, or measured failure modes justify them.
+
+## Run the ten-demo launcher
+
+The launcher is a local, offline-capable browser catalog. It reads `showcase/demos.json` as the only demo list.
+
+```bash
+python3 tools/serve_showcase.py --port 8000
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000/showcase/
+```
+
+The development server binds to loopback by default and sends the cross-origin isolation headers required by Demo 10 (`COOP: same-origin`, `COEP: require-corp`, `CORP: same-origin`).
+
+Validate the catalog, demo files, contracts, and architecture lints:
+
+```bash
+python3 tools/validate_showcase.py
+```
+
+Each demonstration can also be opened standalone from its `showcase/demos/<id>/` entry. Several routes are still placeholders until later commits replace them with playable implementations.
 
 ## Start here
 

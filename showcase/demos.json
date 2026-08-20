@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "demos": [
+    {
+      "id": "01-accessible-card-battler",
+      "number": 1,
+      "title": "Accessible DOM Card Battler",
+      "path": "demos/01-accessible-card-battler/index.html",
+      "architecture": "DOM / CSS / event-driven state",
+      "capabilities": ["dom", "event-timing", "keyboard", "aria-live"],
+      "summary": "Turn-based card combat is discrete UI, not a render loop. Semantic buttons, focus, and live regions are the game surface.",
+      "why": "A turn-based card game is a sequence of explicit player decisions. DOM controls already provide keyboard operation, focus, and announcements, so Canvas or a continuous loop would add complexity without serving the rules.",
+      "status": "not-built"
+    },
+    {
+      "id": "02-canvas-arcade-dodger",
+      "number": 2,
+      "title": "High-DPI Canvas Arcade Dodger",
+      "path": "demos/02-canvas-arcade-dodger/index.html",
+      "architecture": "Canvas 2D / variable delta / DPR backing store",
+      "capabilities": ["canvas2d", "variable-timing", "keyboard", "web-audio"],
+      "summary": "Real-time dodging needs a pixel surface and frame-delta movement, plus blur/visibility handling so held keys and stalls stay honest.",
+      "why": "Hazards move continuously and collision is spatial. Canvas 2D is the simplest pixel surface. Variable delta is enough for arcade feel if pathological frames are clamped; a fixed step is not required yet.",
+      "status": "not-built"
+    },
+    {
+      "id": "03-fixed-step-platformer",
+      "number": 3,
+      "title": "Fixed-Step Platformer",
+      "path": "demos/03-fixed-step-platformer/index.html",
+      "architecture": "Canvas 2D / fixed timestep / interpolated presentation",
+      "capabilities": ["canvas2d", "fixed-interpolated", "aabb", "gamepad"],
+      "summary": "Jumping onto platforms is sensitive to frame-rate variation, so simulation steps stay fixed while rendering interpolates.",
+      "why": "Platform collision and jump arcs change if the physics step follows the display refresh. A bounded fixed step keeps gameplay stable; interpolation is presentation only and is not claimed as cross-platform determinism.",
+      "status": "not-built"
+    },
+    {
+      "id": "04-manifest-adventure",
+      "number": 4,
+      "title": "Manifest-Driven Generated-Art Adventure",
+      "path": "demos/04-manifest-adventure/index.html",
+      "architecture": "Canvas 2D / generated assets / manifest authority",
+      "capabilities": ["canvas2d", "generated-assets", "asset-manifest"],
+      "summary": "Runtime never invents filenames or atlas frames. Spec, local generation, hashes, and the manifest are the only asset authority.",
+      "why": "The lesson is the verified asset lifecycle, not a paid image API. Procedural local art is enough if every runtime lookup goes through logical IDs in an emitted, validated manifest.",
+      "status": "not-built"
+    },
+    {
+      "id": "05-webgl2-particle-arena",
+      "number": 5,
+      "title": "WebGL2 Particle Arena",
+      "path": "demos/05-webgl2-particle-arena/index.html",
+      "architecture": "WebGL2 / GLSL ES 3.00 / instanced particles",
+      "capabilities": ["webgl2", "instancing", "context-loss", "reduced-effects"],
+      "summary": "A particle count large enough to justify GPU instancing, with compile errors, context loss, and quality controls made visible.",
+      "why": "Thousands of independently moving particles are a GPU problem. Canvas 2D fill would hide the architecture being demonstrated. WebGL2 instancing is used because the visual load requires it, not as a default engine.",
+      "status": "not-built"
+    },
+    {
+      "id": "06-accessible-puzzle-museum",
+      "number": 6,
+      "title": "Accessible Puzzle Museum",
+      "path": "demos/06-accessible-puzzle-museum/index.html",
+      "architecture": "DOM / semantic exhibits / no game loop",
+      "capabilities": ["dom", "event-timing", "keyboard", "focus-management"],
+      "summary": "Three puzzle rooms prove a browser game can be documents, forms, and focus — not a canvas by default.",
+      "why": "These puzzles are discrete logic problems with instructions and results. Semantic HTML already models rooms, controls, and status. A canvas loop would fight keyboard and screen-reader use.",
+      "status": "not-built"
+    },
+    {
+      "id": "07-ik-creature-sandbox",
+      "number": 7,
+      "title": "Two-Bone IK Creature Sandbox",
+      "path": "demos/07-ik-creature-sandbox/index.html",
+      "architecture": "Canvas 2D / analytical two-bone IK",
+      "capabilities": ["canvas2d", "inverse-kinematics", "pointer-target"],
+      "summary": "A creature limb follows a pointer with an analytical two-bone solver, reach clamps, and fixtures for extreme targets.",
+      "why": "Limb presentation is geometry, not a physics engine. An analytical two-bone solver is the smallest correct tool; iterative CCD would be unjustified for a two-segment arm.",
+      "status": "not-built"
+    },
+    {
+      "id": "08-swarm-collision-lab",
+      "number": 8,
+      "title": "Swarm Collision Broadphase Lab",
+      "path": "demos/08-swarm-collision-lab/index.html",
+      "architecture": "Canvas 2D / naive vs spatial-hash comparison",
+      "capabilities": ["canvas2d", "spatial-broadphase", "metrics"],
+      "summary": "A measurement bench, not a game level: same swarm, two algorithms, clustered pathology included.",
+      "why": "Spatial hashing is an optimization that can lose on clustered data. The architecture is the comparison itself — naive pairs stay available so claims are measured rather than assumed.",
+      "status": "not-built"
+    },
+    {
+      "id": "09-offline-strategy-sim",
+      "number": 9,
+      "title": "Offline Strategy Simulation",
+      "path": "demos/09-offline-strategy-sim/index.html",
+      "architecture": "DOM / IndexedDB / worker turn resolution",
+      "capabilities": ["dom", "indexeddb", "workers", "schema-migration"],
+      "summary": "A small map whose End Turn work is heavy enough to leave the UI, with versioned saves and explicit corruption handling.",
+      "why": "The UI is a turn sheet; the expensive part is deterministic world resolution. A worker is justified for that calculation. IndexedDB is justified because saves are structured, versioned documents — not a few settings keys.",
+      "status": "not-built"
+    },
+    {
+      "id": "10-shared-memory-field-sim",
+      "number": 10,
+      "title": "Shared-Memory Field Simulator",
+      "path": "demos/10-shared-memory-field-sim/index.html",
+      "architecture": "Worker / SharedArrayBuffer or copy fallback",
+      "capabilities": ["workers", "shared-array-buffer", "atomics", "cross-origin-isolation"],
+      "summary": "A field large enough to show data-path cost, with SHARED MEMORY vs FALLBACK TRANSFER/COPY labeled in the UI.",
+      "why": "SharedArrayBuffer is a security-gated concurrency tool, not a default. This demo exists to detect isolation, use SAB only when legal, and keep a copy/transfer path so the lesson still works without it.",
+      "status": "not-built"
+    }
+  ]
+}

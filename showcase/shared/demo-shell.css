@@ -1,0 +1,80 @@
+:root {
+  --ink: #12202b;
+  --paper: #f4f0e6;
+  --panel: #fffdf8;
+  --rule: #cbbfa8;
+  --accent: #1f6f8b;
+  --warn: #9b2c2c;
+  --mono: "IBM Plex Mono", "ui-monospace", Menlo, Consolas, monospace;
+  --sans: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+  --serif: "Iowan Old Style", Palatino, "Book Antiqua", serif;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.45;
+}
+
+.demo-shell {
+  width: min(960px, calc(100% - 1.5rem));
+  margin: 1rem auto 2rem;
+}
+
+.demo-shell header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.7rem;
+}
+
+.demo-shell .meta {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  padding: 0.9rem;
+  margin: 0.75rem 0;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #d26a21;
+  outline-offset: 2px;
+}
+
+.demo-error {
+  border: 1px solid var(--warn);
+  background: #f7e4e0;
+  color: var(--warn);
+  padding: 0.8rem;
+}
+
+.placeholder-note {
+  font-family: var(--serif);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

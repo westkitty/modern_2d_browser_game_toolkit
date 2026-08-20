@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "projectName": "Two-Bone IK Creature Sandbox",
+  "renderPath": "canvas2d",
+  "timingModel": "variable",
+  "existingFramework": null,
+  "targetBrowsers": [
+    "current Chromium",
+    "current Firefox",
+    "current Safari"
+  ],
+  "capabilities": {
+    "generatedAssets": false,
+    "assetManifest": null,
+    "webAudio": false,
+    "gamepad": false,
+    "workers": false,
+    "sharedArrayBuffer": false,
+    "deploymentAutomation": false,
+    "postprocessing": false,
+    "normalMapping": false,
+    "inverseKinematics": true,
+    "spatialBroadphase": false,
+    "persistence": "none"
+  },
+  "paths": {
+    "frontend": [
+      "."
+    ],
+    "ignore": [
+      "node_modules",
+      "dist",
+      "build",
+      ".git",
+      "coverage",
+      ".architecture-checks"
+    ],
+    "allowedAssetLiteralFiles": [
+      "main.js",
+      "assets",
+      "asset-spec"
+    ]
+  },
+  "validation": {
+    "commands": [
+      "node --check main.js"
+    ],
+    "browserUrl": "http://127.0.0.1:8000/showcase/demos/07-ik-creature-sandbox/",
+    "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"
+  },
+  "lint": {
+    "ignoreCodes": [],
+    "ignorePaths": [
+      "README.md"
+    ]
+  }
+}

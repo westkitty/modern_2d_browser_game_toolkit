@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "projectName": "Shared-Memory Field Simulator",
+  "renderPath": "canvas2d",
+  "timingModel": "variable",
+  "existingFramework": null,
+  "targetBrowsers": [
+    "current Chromium",
+    "current Firefox",
+    "current Safari"
+  ],
+  "capabilities": {
+    "generatedAssets": false,
+    "assetManifest": null,
+    "webAudio": false,
+    "gamepad": false,
+    "workers": true,
+    "sharedArrayBuffer": true,
+    "deploymentAutomation": false,
+    "postprocessing": false,
+    "normalMapping": false,
+    "inverseKinematics": false,
+    "spatialBroadphase": false,
+    "persistence": "none"
+  },
+  "paths": {
+    "frontend": [
+      "."
+    ],
+    "ignore": [
+      "node_modules",
+      "dist",
+      "build",
+      ".git",
+      "coverage",
+      ".architecture-checks"
+    ],
+    "allowedAssetLiteralFiles": [
+      "main.js",
+      "assets",
+      "asset-spec"
+    ]
+  },
+  "validation": {
+    "commands": [
+      "node --check main.js",
+      "node --check worker.js"
+    ],
+    "browserUrl": "http://127.0.0.1:8000/showcase/demos/10-shared-memory-field-sim/",
+    "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"
+  },
+  "lint": {
+    "ignoreCodes": [],
+    "ignorePaths": [
+      "README.md"
+    ]
+  },
+  "deploymentHeaders": {
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Cross-Origin-Embedder-Policy": "require-corp"
+  }
+}
