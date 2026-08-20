@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "outputDir": "assets",
+  "manifest": "assets/manifest.json",
+  "tileSize": 32,
+  "assets": [
+    {"id": "player", "kind": "image", "file": "player.svg", "role": "avatar", "fill": "#1f6f8b", "mark": "#f3efe4"},
+    {"id": "tree", "kind": "image", "file": "tree.svg", "role": "prop", "fill": "#2f6b3a", "mark": "#1d3f24"},
+    {"id": "rock", "kind": "image", "file": "rock.svg", "role": "prop", "fill": "#6b6258", "mark": "#3f3a36"},
+    {"id": "well", "kind": "image", "file": "well.svg", "role": "prop", "fill": "#2c4454", "mark": "#7ec8e3"},
+    {"id": "chest", "kind": "image", "file": "chest.svg", "role": "interactable", "fill": "#8a5a12", "mark": "#c4a574"},
+    {"id": "grass", "kind": "image", "file": "grass.svg", "role": "ground", "fill": "#9cb56e", "mark": "#7a944e"}
+  ]
+}

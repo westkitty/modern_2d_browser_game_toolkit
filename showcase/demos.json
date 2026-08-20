@@ -43,7 +43,7 @@
       "capabilities": ["canvas2d", "generated-assets", "asset-manifest"],
       "summary": "Runtime never invents filenames or atlas frames. Spec, local generation, hashes, and the manifest are the only asset authority.",
       "why": "The lesson is the verified asset lifecycle, not a paid image API. Procedural local art is enough if every runtime lookup goes through logical IDs in an emitted, validated manifest.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "05-webgl2-particle-arena",

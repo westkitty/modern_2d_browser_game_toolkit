@@ -1,5 +1,42 @@
 {
   "schemaVersion": 1,
   "atlases": {},
-  "assets": {}
+  "assets": {
+    "player": {
+      "kind": "image",
+      "path": "player.svg",
+      "sha256": "9f207fc3db10c7fb742e9eda2cd3d5e7fa2e7b64cc6e96939127271aa9e4631c",
+      "role": "avatar"
+    },
+    "tree": {
+      "kind": "image",
+      "path": "tree.svg",
+      "sha256": "07b7ad2fa2e624f1059e8cffc2e6502008086ac99dfbaa53d285dc2618f5d323",
+      "role": "prop"
+    },
+    "rock": {
+      "kind": "image",
+      "path": "rock.svg",
+      "sha256": "16d80875eb6429ba7055b0a9e26fa538ad48ab2525fa2a453032cc2a253ec337",
+      "role": "prop"
+    },
+    "well": {
+      "kind": "image",
+      "path": "well.svg",
+      "sha256": "c78dc6ba1c632acca71cb19fd38d3a2e81efdaa97b68a72603dc03040e591d51",
+      "role": "prop"
+    },
+    "chest": {
+      "kind": "image",
+      "path": "chest.svg",
+      "sha256": "b431ddcc1eaca70b7df5785f665663754a62a6f82eb784a96a4910a3a0e7bfcc",
+      "role": "interactable"
+    },
+    "grass": {
+      "kind": "image",
+      "path": "grass.svg",
+      "sha256": "fc6355f7ae0e1336ba27794a7a1f1f6b718e4e566807fd29bb2689acd7a459c1",
+      "role": "ground"
+    }
+  }
 }

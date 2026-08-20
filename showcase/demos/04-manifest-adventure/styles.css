@@ -1,0 +1,20 @@
+.hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hud p {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #9cb56e;
+}
+
+.hint {
+  font-family: var(--serif);
+}

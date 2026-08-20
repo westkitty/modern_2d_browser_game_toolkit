@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manifest-Driven Generated-Art Adventure</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">04-manifest-adventure</p>
-      <h1>Manifest-Driven Generated-Art Adventure</h1>
+      <p class="meta">04 · Canvas 2D · manifest authority · local generated art</p>
+      <h1>Manifest-Driven Adventure</h1>
+      <p>Art is generated locally, hashed, and loaded only by logical ID. Runtime never invents filenames.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <p id="status" role="status">Loading manifest…</p>
+      <p>Nearest <strong id="near">none</strong></p>
     </section>
+    <canvas id="game" width="640" height="360" aria-label="Top-down meadow"></canvas>
+    <p class="hint">WASD / arrows move. Approach the chest and press E or Space to open it.</p>
   </main>
   <script type="module" src="./main.js"></script>
 </body>

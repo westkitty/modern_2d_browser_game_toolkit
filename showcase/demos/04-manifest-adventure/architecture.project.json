@@ -37,13 +37,18 @@
     ],
     "allowedAssetLiteralFiles": [
       "main.js",
+      "assetLoader.js",
       "assets",
       "asset-spec"
     ]
   },
   "validation": {
     "commands": [
-      "node --check main.js"
+      "node --check main.js",
+      "node --check assetLoader.js",
+      "node assetLoader.test.mjs",
+      "python3 scripts/generate_assets.py",
+      "python3 ../../../tools/manifest_validator.py assets/manifest.json --project-root . --verify-files --verify-hashes"
     ],
     "browserUrl": "http://127.0.0.1:8000/showcase/demos/04-manifest-adventure/",
     "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"
@@ -51,7 +56,9 @@
   "lint": {
     "ignoreCodes": [],
     "ignorePaths": [
-      "README.md"
+      "README.md",
+      "architecture.project.json",
+      "asset-spec"
     ]
   }
 }
