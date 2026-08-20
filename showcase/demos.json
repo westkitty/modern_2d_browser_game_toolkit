@@ -76,7 +76,7 @@
       "capabilities": ["canvas2d", "inverse-kinematics", "pointer-target"],
       "summary": "A creature limb follows a pointer with an analytical two-bone solver, reach clamps, and fixtures for extreme targets.",
       "why": "Limb presentation is geometry, not a physics engine. An analytical two-bone solver is the smallest correct tool; iterative CCD would be unjustified for a two-segment arm.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "08-swarm-collision-lab",

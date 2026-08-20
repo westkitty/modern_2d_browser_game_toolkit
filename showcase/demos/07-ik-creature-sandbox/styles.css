@@ -1,0 +1,14 @@
+.hud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #12202b;
+  touch-action: none;
+}

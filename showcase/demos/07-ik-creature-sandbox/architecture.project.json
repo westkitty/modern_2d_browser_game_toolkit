@@ -43,7 +43,9 @@
   },
   "validation": {
     "commands": [
-      "node --check main.js"
+      "node --check main.js",
+      "node --check ik.js",
+      "node ik.test.mjs"
     ],
     "browserUrl": "http://127.0.0.1:8000/showcase/demos/07-ik-creature-sandbox/",
     "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"

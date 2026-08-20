@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Two-Bone IK Creature Sandbox</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">07-ik-creature-sandbox</p>
+      <p class="meta">07 · Canvas 2D · analytical two-bone IK</p>
       <h1>Two-Bone IK Creature Sandbox</h1>
+      <p>Drag the target. The solver is closed-form, not CCD. Unreachable points clamp to max reach.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <label><input type="radio" name="bend" value="1" checked> Elbow +</label>
+      <label><input type="radio" name="bend" value="-1"> Elbow −</label>
+      <p>A <strong id="ang-a">0</strong> · B <strong id="ang-b">0</strong> · Reach <strong id="reach">in</strong></p>
     </section>
+    <canvas id="game" width="640" height="360" aria-label="IK creature"></canvas>
   </main>
   <script type="module" src="./main.js"></script>
 </body>
