@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fixed-Step Platformer</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">03-fixed-step-platformer</p>
+      <p class="meta">03 · Canvas 2D · fixed step · interpolated presentation</p>
       <h1>Fixed-Step Platformer</h1>
+      <p>Simulation steps at 60 Hz. Rendering interpolates previous and current poses. A gamepad is optional.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <p>Sim steps / frame <strong id="steps">0</strong></p>
+      <p>Alpha <strong id="alpha">0</strong></p>
+      <p>Pad <strong id="pad">keyboard</strong></p>
+      <button type="button" id="reset">Reset</button>
     </section>
+    <canvas id="game" width="640" height="360" aria-label="Platformer stage"></canvas>
+    <p class="hint">Arrows/WASD move, Space/W/Up jump. Gamepad left stick + face button if present. Reach the brass door.</p>
   </main>
   <script type="module" src="./main.js"></script>
 </body>

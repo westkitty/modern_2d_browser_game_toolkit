@@ -32,7 +32,7 @@
       "capabilities": ["canvas2d", "fixed-interpolated", "aabb", "gamepad"],
       "summary": "Jumping onto platforms is sensitive to frame-rate variation, so simulation steps stay fixed while rendering interpolates.",
       "why": "Platform collision and jump arcs change if the physics step follows the display refresh. A bounded fixed step keeps gameplay stable; interpolation is presentation only and is not claimed as cross-platform determinism.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "04-manifest-adventure",

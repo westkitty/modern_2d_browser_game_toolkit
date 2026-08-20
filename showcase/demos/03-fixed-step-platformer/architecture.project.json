@@ -43,7 +43,9 @@
   },
   "validation": {
     "commands": [
-      "node --check main.js"
+      "node --check main.js",
+      "node --check deadzone.js",
+      "node deadzone.test.mjs"
     ],
     "browserUrl": "http://127.0.0.1:8000/showcase/demos/03-fixed-step-platformer/",
     "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"
