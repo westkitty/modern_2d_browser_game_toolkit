@@ -98,7 +98,7 @@
       "capabilities": ["dom", "indexeddb", "workers", "schema-migration"],
       "summary": "A small map whose End Turn work is heavy enough to leave the UI, with versioned saves and explicit corruption handling.",
       "why": "The UI is a turn sheet; the expensive part is deterministic world resolution. A worker is justified for that calculation. IndexedDB is justified because saves are structured, versioned documents — not a few settings keys.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "10-shared-memory-field-sim",

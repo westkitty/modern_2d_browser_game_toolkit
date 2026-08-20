@@ -1,0 +1,24 @@
+.hud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(3.5rem, 1fr));
+  gap: 0.35rem;
+}
+
+.cell {
+  border: 1px solid #12202b;
+  background: #fffdf8;
+  min-height: 4.2rem;
+  padding: 0.35rem;
+  font-size: 0.85rem;
+}
+
+#log {
+  font-family: var(--serif);
+}

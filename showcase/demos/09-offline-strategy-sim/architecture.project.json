@@ -44,7 +44,9 @@
   "validation": {
     "commands": [
       "node --check main.js",
-      "node --check worker.js"
+      "node --check worker.js",
+      "node --check schema.js",
+      "node schema.test.mjs"
     ],
     "browserUrl": "http://127.0.0.1:8000/showcase/demos/09-offline-strategy-sim/",
     "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"

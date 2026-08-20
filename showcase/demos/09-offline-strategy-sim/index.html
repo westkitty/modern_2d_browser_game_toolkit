@@ -5,16 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Offline Strategy Simulation</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">09-offline-strategy-sim</p>
+      <p class="meta">09 · DOM · IndexedDB · worker turns</p>
       <h1>Offline Strategy Simulation</h1>
+      <p>End Turn sends a heavy deterministic step to a worker. The grid stays usable while it calculates.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <p>Turn <strong id="turn">1</strong></p>
+      <p id="busy">Idle</p>
+      <button type="button" id="end-turn">End Turn</button>
+      <button type="button" id="save">Save</button>
+      <button type="button" id="load">Load</button>
+      <button type="button" id="load-v1">Load v1 fixture</button>
+      <button type="button" id="load-corrupt">Load corrupt fixture</button>
     </section>
+    <p id="status" role="status"></p>
+    <div id="grid" class="grid" role="grid" aria-label="Territory map"></div>
+    <ul id="log"></ul>
   </main>
   <script type="module" src="./main.js"></script>
 </body>
