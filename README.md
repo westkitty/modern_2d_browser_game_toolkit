@@ -35,7 +35,26 @@ Validate the catalog, demo files, contracts, and architecture lints:
 python3 tools/validate_showcase.py
 ```
 
-Each demonstration can also be opened standalone from its `showcase/demos/<id>/` entry. Several routes are still placeholders until later commits replace them with playable implementations.
+Each demonstration can also be opened standalone from its `showcase/demos/<id>/` entry.
+
+Architecture notes for the launcher and the ten demos: `docs/SHOWCASE_ARCHITECTURE.md`.
+
+### Showcase demonstrations
+
+1. **Accessible DOM Card Battler** — semantic buttons, live regions, no canvas.
+2. **High-DPI Canvas Arcade Dodger** — DPR backing store, variable delta, blur-safe input.
+3. **Fixed-Step Platformer** — 60 Hz simulation, interpolated presentation, gamepad deadzone.
+4. **Manifest-Driven Generated-Art Adventure** — spec → local generate → hashed manifest → logical IDs.
+5. **WebGL2 Particle Arena** — GLSL ES 3.00 instancing, context-loss handling, reduced effects.
+6. **Accessible Puzzle Museum** — three keyboard-complete exhibits, no game loop.
+7. **Two-Bone IK Creature Sandbox** — analytical IK with reach clamps and fixtures.
+8. **Swarm Collision Broadphase Lab** — naive vs grid, including clustered pathology.
+9. **Offline Strategy Simulation** — IndexedDB versioning plus a worker for heavy turns.
+10. **Shared-Memory Field Simulator** — SharedArrayBuffer only when isolated; otherwise copy fallback.
+
+WebGL2, workers, SharedArrayBuffer, spatial hashing, and IK are **conditional examples**. They are not a required engine profile. A game that does not need them should not activate them.
+
+The `examples/` directory still ships architecture contracts/recipes for the same ten names. The playable implementations live under `showcase/demos/`.
 
 ## Start here
 
