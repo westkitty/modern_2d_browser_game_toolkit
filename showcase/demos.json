@@ -87,7 +87,7 @@
       "capabilities": ["canvas2d", "spatial-broadphase", "metrics"],
       "summary": "A measurement bench, not a game level: same swarm, two algorithms, clustered pathology included.",
       "why": "Spatial hashing is an optimization that can lose on clustered data. The architecture is the comparison itself — naive pairs stay available so claims are measured rather than assumed.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "09-offline-strategy-sim",

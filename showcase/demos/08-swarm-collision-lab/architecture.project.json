@@ -43,7 +43,9 @@
   },
   "validation": {
     "commands": [
-      "node --check main.js"
+      "node --check main.js",
+      "node --check broadphase.js",
+      "node broadphase.test.mjs"
     ],
     "browserUrl": "http://127.0.0.1:8000/showcase/demos/08-swarm-collision-lab/",
     "readyExpression": "() => window.__DEMO_STATUS__ && window.__DEMO_STATUS__.state === 'ready'"

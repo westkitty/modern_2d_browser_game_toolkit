@@ -5,16 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Swarm Collision Broadphase Lab</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">08-swarm-collision-lab</p>
+      <p class="meta">08 · Canvas 2D · naive vs spatial hash · measured</p>
       <h1>Swarm Collision Broadphase Lab</h1>
+      <p>Same swarm, two algorithms. Clustered mode exists to show degradation, not a universal O(N) win.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel controls">
+      <label>Count <input id="count" type="range" min="40" max="400" value="160"></label>
+      <label>Mode
+        <select id="mode">
+          <option value="naive">Naive pairs</option>
+          <option value="grid">Uniform grid</option>
+        </select>
+      </label>
+      <label>Layout
+        <select id="layout">
+          <option value="uniform">Uniform</option>
+          <option value="clustered">Clustered</option>
+        </select>
+      </label>
+      <button type="button" id="pause">Pause</button>
+      <button type="button" id="reset">Reset</button>
     </section>
+    <section class="panel metrics" aria-live="polite">
+      <p>Entities <strong id="m-count">0</strong></p>
+      <p>Candidates <strong id="m-cand">0</strong></p>
+      <p>Narrowphase <strong id="m-narrow">0</strong></p>
+      <p>Update ms <strong id="m-update">0</strong></p>
+      <p>Frame ms <strong id="m-frame">0</strong></p>
+    </section>
+    <canvas id="game" width="640" height="360" aria-label="Swarm lab"></canvas>
   </main>
   <script type="module" src="./main.js"></script>
 </body>
