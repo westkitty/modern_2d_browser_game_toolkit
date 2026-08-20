@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shared-Memory Field Simulator</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">10-shared-memory-field-sim</p>
+      <p class="meta">10 · worker field · SAB or copy fallback</p>
       <h1>Shared-Memory Field Simulator</h1>
+      <p>SharedArrayBuffer is used only when this document is cross-origin isolated. Otherwise the worker copies the field.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <p>Path <strong id="path-label">detecting</strong></p>
+      <p>isolated <strong id="iso">false</strong></p>
+      <p>generation <strong id="gen">0</strong></p>
     </section>
+    <canvas id="field" width="256" height="256" aria-label="Simulated field"></canvas>
   </main>
   <script type="module" src="./main.js"></script>
 </body>

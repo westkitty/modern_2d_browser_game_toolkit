@@ -1,0 +1,13 @@
+.hud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+canvas {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  background: #0b141a;
+  image-rendering: pixelated;
+}

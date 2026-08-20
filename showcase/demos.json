@@ -109,7 +109,7 @@
       "capabilities": ["workers", "shared-array-buffer", "atomics", "cross-origin-isolation"],
       "summary": "A field large enough to show data-path cost, with SHARED MEMORY vs FALLBACK TRANSFER/COPY labeled in the UI.",
       "why": "SharedArrayBuffer is a security-gated concurrency tool, not a default. This demo exists to detect isolation, use SAB only when legal, and keep a copy/transfer path so the lesson still works without it.",
-      "status": "not-built"
+      "status": "ready"
     }
   ]
 }
