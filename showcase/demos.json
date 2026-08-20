@@ -10,7 +10,7 @@
       "capabilities": ["dom", "event-timing", "keyboard", "aria-live"],
       "summary": "Turn-based card combat is discrete UI, not a render loop. Semantic buttons, focus, and live regions are the game surface.",
       "why": "A turn-based card game is a sequence of explicit player decisions. DOM controls already provide keyboard operation, focus, and announcements, so Canvas or a continuous loop would add complexity without serving the rules.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "02-canvas-arcade-dodger",

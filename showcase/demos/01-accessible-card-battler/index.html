@@ -5,15 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Accessible DOM Card Battler</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">01-accessible-card-battler</p>
+      <p class="meta">01 · DOM / event-driven · no canvas</p>
       <h1>Accessible DOM Card Battler</h1>
+      <p>Play a short duel with three distinct cards. Everything is a real control — keyboard only is enough.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+
+    <div id="announce" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <section class="panel battlefield" aria-label="Battlefield">
+      <article class="combatant" aria-labelledby="enemy-name">
+        <h2 id="enemy-name">Ash Warden</h2>
+        <p class="hp"><span id="enemy-hp">20</span><span class="max"> / 20 HP</span></p>
+        <div class="meter" aria-hidden="true"><span id="enemy-bar"></span></div>
+        <p class="intent">Intent: <strong id="enemy-intent">Strike 5</strong></p>
+      </article>
+      <article class="combatant player" aria-labelledby="player-name">
+        <h2 id="player-name">You</h2>
+        <p class="hp"><span id="player-hp">20</span><span class="max"> / 20 HP</span></p>
+        <div class="meter" aria-hidden="true"><span id="player-bar"></span></div>
+        <p class="intent">Block: <strong id="player-block">0</strong> · Turn <strong id="turn">1</strong></p>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="hand-title">
+      <h2 id="hand-title">Your hand</h2>
+      <p class="hint">Arrow keys move between cards. Enter or Space plays the focused card.</p>
+      <div id="hand" class="hand" role="list"></div>
+    </section>
+
+    <section id="end-panel" class="panel end-panel hidden" aria-live="polite">
+      <h2 id="end-title">Match over</h2>
+      <p id="end-copy"></p>
+      <button type="button" id="restart">Restart duel</button>
     </section>
   </main>
   <script type="module" src="./main.js"></script>
