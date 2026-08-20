@@ -1,0 +1,50 @@
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.rooms button[aria-current="page"] {
+  background: #1f6f8b;
+  border-color: #1f6f8b;
+}
+
+.progress {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.exhibit h2:focus {
+  outline: 3px solid #d26a21;
+  outline-offset: 3px;
+}
+
+.hidden { display: none !important; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

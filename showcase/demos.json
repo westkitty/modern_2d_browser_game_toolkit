@@ -65,7 +65,7 @@
       "capabilities": ["dom", "event-timing", "keyboard", "focus-management"],
       "summary": "Three puzzle rooms prove a browser game can be documents, forms, and focus — not a canvas by default.",
       "why": "These puzzles are discrete logic problems with instructions and results. Semantic HTML already models rooms, controls, and status. A canvas loop would fight keyboard and screen-reader use.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "07-ik-creature-sandbox",

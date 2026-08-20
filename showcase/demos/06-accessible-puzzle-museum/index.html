@@ -5,15 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Accessible Puzzle Museum</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">06-accessible-puzzle-museum</p>
+      <p class="meta">06 · DOM · event-driven · no canvas loop</p>
       <h1>Accessible Puzzle Museum</h1>
+      <p>Three exhibits. Keyboard only. Focus stays visible when you change rooms.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <p id="announce" class="sr-only" role="status" aria-live="polite"></p>
+    <nav class="panel rooms" aria-label="Exhibits">
+      <button type="button" data-room="0" aria-current="page">1. Chime order</button>
+      <button type="button" data-room="1">2. Vault digits</button>
+      <button type="button" data-room="2">3. Relic lineup</button>
+    </nav>
+    <p class="progress">Solved <strong id="solved">0</strong> / 3 · <button type="button" id="reset">Reset museum</button></p>
+
+    <section class="panel exhibit" data-exhibit="0" aria-labelledby="ex0-title">
+      <h2 id="ex0-title" tabindex="-1">Chime order</h2>
+      <p>Play the three tones in the documented order: Low, High, Mid.</p>
+      <div class="row">
+        <button type="button" data-chime="low">Low</button>
+        <button type="button" data-chime="high">High</button>
+        <button type="button" data-chime="mid">Mid</button>
+      </div>
+      <p id="ex0-status">Sequence empty.</p>
+    </section>
+
+    <section class="panel exhibit hidden" data-exhibit="1" aria-labelledby="ex1-title">
+      <h2 id="ex1-title" tabindex="-1">Vault digits</h2>
+      <p>Set the combination to 4-1-9 using the spinbuttons.</p>
+      <div class="row">
+        <label>A <input id="d0" type="number" min="0" max="9" value="0"></label>
+        <label>B <input id="d1" type="number" min="0" max="9" value="0"></label>
+        <label>C <input id="d2" type="number" min="0" max="9" value="0"></label>
+        <button type="button" id="try-vault">Try combination</button>
+      </div>
+      <p id="ex1-status">Vault locked.</p>
+    </section>
+
+    <section class="panel exhibit hidden" data-exhibit="2" aria-labelledby="ex2-title">
+      <h2 id="ex2-title" tabindex="-1">Relic lineup</h2>
+      <p>Order the relics oldest to newest: Bone, Coin, Lens.</p>
+      <ol id="relics"></ol>
+      <p id="ex2-status">Lineup not yet correct.</p>
     </section>
   </main>
   <script type="module" src="./main.js"></script>
