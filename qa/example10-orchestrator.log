@@ -1,0 +1,14 @@
+
+== Architecture activation ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/architecture_preflight.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/10-shared-memory-field/architecture.project.json --project-root /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/10-shared-memory-field --out /tmp/check10/ACTIVATION.md
+/tmp/check10/ACTIVATION.md
+
+== Validation checklist ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/checklist_generator.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/10-shared-memory-field/architecture.project.json --out /tmp/check10/VALIDATION_CHECKLIST.md
+/tmp/check10/VALIDATION_CHECKLIST.md
+
+== Architecture linter ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/architecture_linter.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/10-shared-memory-field --config /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/10-shared-memory-field/architecture.project.json --json /tmp/check10/architecture-lint.json
+SUMMARY errors=0 warnings=0 info=0
+
+PASS: architecture toolkit checks; failures=0; report=/tmp/check10/SUMMARY.json

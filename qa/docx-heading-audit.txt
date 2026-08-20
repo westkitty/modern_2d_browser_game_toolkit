@@ -1,0 +1,30 @@
+HEADING STYLE COUNTS
+- Heading 1: 9
+- Heading 2: 45
+- Heading 3: 60
+
+NUMBERING WITHOUT HEADING STYLE (common TOC issue)
+- p#7: style='Compact' text='0. What This Toolkit Is For'
+- p#9: style='Compact' text='1. Normative and Evidence Terminology'
+- p#10: style='Compact' text='2. The Architecture Project Contract'
+- p#11: style='Compact' text='3. Architecture Decision Framework'
+- p#12: style='Compact' text='4. Existing-Project Preservation'
+- p#13: style='Compact' text='5. Reference Architecture Profiles'
+- p#15: style='Compact' text='6. Timing Models'
+- p#16: style='Compact' text='7. Browser Lifecycle'
+- p#17: style='Compact' text='8. High-DPI and Coordinate Architecture'
+- p#18: style='Compact' text='9. State Ownership and Scene Lifecycle'
+- p#19: style='Compact' text='10. Input Architecture and Analog Deadzones'
+- p#21: style='Compact' text='11. Asset Authority and the Three-Stage Verified Lifecycle'
+- p#22: style='Compact' text='12. Rendering Path Selection'
+- p#23: style='Compact' text='13. WebGL2 Resource and Failure Model'
+- p#24: style='Compact' text='14. Lighting, Normal Maps, and Postprocessing'
+- p#25: style='Compact' text='15. Animation and Camera'
+- p#26: style='Compact' text='16. Collision and Physics Escalation'
+- p#28: style='Compact' text='17. Memory and Performance Methodology'
+- p#29: style='Compact' text='18. Workers, OffscreenCanvas, and Shared Memory'
+- p#30: style='Compact' text='19. Web Audio'
+- ... (401 more)
+
+REMINDER
+- TOC relies on Heading styles (Heading 1/2/3...). Avoid manual numbering + direct formatting for headings.

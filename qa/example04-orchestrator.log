@@ -1,0 +1,19 @@
+
+== Architecture activation ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/architecture_preflight.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure/architecture.project.json --project-root /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure --out /tmp/check04/ACTIVATION.md
+/tmp/check04/ACTIVATION.md
+
+== Validation checklist ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/checklist_generator.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure/architecture.project.json --out /tmp/check04/VALIDATION_CHECKLIST.md
+/tmp/check04/VALIDATION_CHECKLIST.md
+
+== Architecture linter ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/architecture_linter.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure --config /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure/architecture.project.json --json /tmp/check04/architecture-lint.json
+WARNING AUDIO101: webAudio=true but no AudioContext reference was found in scanned frontend paths
+SUMMARY errors=0 warnings=1 info=0
+
+== Asset manifest ==
+$ /opt/pyvenv/bin/python /mnt/data/modern_2d_browser_game_architecture_toolkit/tools/manifest_validator.py /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure/assets/manifest.json --project-root /mnt/data/modern_2d_browser_game_architecture_toolkit/examples/04-generated-art-adventure --json /tmp/check04/manifest-validation.json
+PASS: manifest validated
+
+PASS: architecture toolkit checks; failures=0; report=/tmp/check04/SUMMARY.json

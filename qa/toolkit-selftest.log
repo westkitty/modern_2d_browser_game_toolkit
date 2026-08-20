@@ -1,0 +1,11 @@
+PASS example 01-dom-card-battler
+PASS example 02-canvas-arcade-dodger
+PASS example 03-fixed-platformer
+PASS example 04-generated-art-adventure
+PASS example 05-webgl-particle-arena
+PASS example 06-accessible-puzzle-museum
+PASS example 07-ik-creature-sandbox
+PASS example 08-swarm-collision-lab
+PASS example 09-offline-strategy-sim
+PASS example 10-shared-memory-field
+PASS toolkit self-test

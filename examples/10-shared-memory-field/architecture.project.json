@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "projectName": "Cross-Origin-Isolated Field Simulator",
+  "renderPath": "webgl2",
+  "timingModel": "variable",
+  "existingFramework": null,
+  "targetBrowsers": [
+    "current Chromium",
+    "current Firefox",
+    "current Safari"
+  ],
+  "capabilities": {
+    "generatedAssets": false,
+    "assetManifest": null,
+    "webAudio": false,
+    "gamepad": false,
+    "workers": true,
+    "sharedArrayBuffer": true,
+    "deploymentAutomation": false,
+    "postprocessing": true,
+    "normalMapping": false,
+    "inverseKinematics": false,
+    "spatialBroadphase": false,
+    "persistence": "none"
+  },
+  "paths": {
+    "frontend": [
+      "src",
+      "public"
+    ],
+    "ignore": [
+      "node_modules",
+      "dist",
+      "build",
+      ".git",
+      "coverage"
+    ],
+    "allowedAssetLiteralFiles": [
+      "src/assets",
+      "src/assetLoader.js",
+      "src/assetLoader.ts"
+    ]
+  },
+  "validation": {
+    "commands": [
+      "npm test",
+      "npm run build"
+    ],
+    "browserUrl": "http://127.0.0.1:5173",
+    "readyExpression": "() => document.readyState === \"complete\""
+  },
+  "deploymentHeaders": {
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Cross-Origin-Embedder-Policy": "require-corp"
+  },
+  "lint": {
+    "ignoreCodes": [],
+    "ignorePaths": []
+  }
+}

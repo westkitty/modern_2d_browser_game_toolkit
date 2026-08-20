@@ -1,0 +1,13 @@
+[style_lint] direct run-formatting runs: 251
+[style_lint] direct paragraph-formatting paragraphs: 77
+[style_lint] top fonts by char count: Aptos(1693)
+[style_lint] heading-like paragraphs not using Heading styles (first 10):
+  - #109: style='Compact' text='Requirement intake. What player-visible behavior is actually required?'
+  - #112: style='Compact' text='Render path. DOM/CSS, Canvas 2D, WebGL2, existing renderer/framework, or hybrid?'
+  - #118: style='Compact' text='Validation. What proves the required path works?'
+  - #161: style='First Paragraph' text='Do not add a Canvas renderer merely to make it “game-like.”'
+  - #839: style='Compact' text='Capability'
+  - #840: style='Compact' text='Minimum proof examples'
+  - #865: style='Compact' text='Code'
+  - #866: style='Compact' text='Class'
+  - #867: style='Compact' text='Trigger'

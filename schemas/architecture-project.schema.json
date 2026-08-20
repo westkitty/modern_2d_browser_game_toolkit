@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/architecture-project.schema.json",
+  "title": "2D Browser Game Architecture Project Contract",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "projectName",
+    "renderPath",
+    "timingModel",
+    "capabilities",
+    "paths",
+    "validation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "renderPath": {
+      "enum": [
+        "dom",
+        "canvas2d",
+        "webgl2",
+        "existing"
+      ]
+    },
+    "timingModel": {
+      "enum": [
+        "event",
+        "variable",
+        "fixed",
+        "fixed_interpolated"
+      ]
+    },
+    "existingFramework": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "targetBrowsers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "generatedAssets",
+        "webAudio",
+        "gamepad",
+        "workers",
+        "sharedArrayBuffer",
+        "deploymentAutomation",
+        "postprocessing",
+        "normalMapping",
+        "inverseKinematics",
+        "spatialBroadphase",
+        "persistence"
+      ],
+      "properties": {
+        "generatedAssets": {
+          "type": "boolean"
+        },
+        "assetManifest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "webAudio": {
+          "type": "boolean"
+        },
+        "gamepad": {
+          "type": "boolean"
+        },
+        "workers": {
+          "type": "boolean"
+        },
+        "sharedArrayBuffer": {
+          "type": "boolean"
+        },
+        "deploymentAutomation": {
+          "type": "boolean"
+        },
+        "postprocessing": {
+          "type": "boolean"
+        },
+        "normalMapping": {
+          "type": "boolean"
+        },
+        "inverseKinematics": {
+          "type": "boolean"
+        },
+        "spatialBroadphase": {
+          "type": "boolean"
+        },
+        "persistence": {
+          "enum": [
+            "none",
+            "localStorage",
+            "indexedDB"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "deploymentHeaders": {
+      "type": "object",
+      "properties": {
+        "Cross-Origin-Opener-Policy": {
+          "type": "string"
+        },
+        "Cross-Origin-Embedder-Policy": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "paths": {
+      "type": "object",
+      "required": [
+        "frontend",
+        "ignore",
+        "allowedAssetLiteralFiles"
+      ],
+      "properties": {
+        "frontend": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ignore": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowedAssetLiteralFiles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "commands",
+        "browserUrl",
+        "readyExpression"
+      ],
+      "properties": {
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "browserUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "readyExpression": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "lint": {
+      "type": "object",
+      "properties": {
+        "ignoreCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ignorePaths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

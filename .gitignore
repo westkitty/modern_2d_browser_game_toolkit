@@ -1,0 +1,47 @@
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+
+# Node / frontend build artifacts
+node_modules/
+dist/
+build/
+coverage/
+.turbo/
+.cache/
+
+# Test / browser tooling output
+playwright-report/
+test-results/
+*.log
+!qa/*.log
+
+# Generated architecture-check reports
+.architecture-checks/
+
+# Temporary render / QA screenshot output
+tmp/
+temp/
+*.tmp
+qa/screenshots/
+showcase/tmp/
+
+# Original packaged archive (sources are extracted into this repository)
+Modern_2D_Browser_Game_Architecture_Toolkit_v2.0.zip

@@ -1,0 +1,20 @@
+name: architecture-contract
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  architecture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run architecture contract checks
+        run: |
+          python path/to/toolkit/tools/run_project_checks.py . --strict-lint --verify-asset-files
+      # Optional browser smoke: install Playwright in the project, start the app,
+      # then add --browser once validation.browserUrl points at the running test server.

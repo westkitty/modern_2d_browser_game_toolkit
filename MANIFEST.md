@@ -1,0 +1,75 @@
+# Release Manifest
+
+**Release:** Modern 2D Browser Game Architecture Toolkit v2.0  
+**Status:** final
+
+| File | Role | Bytes | SHA-256 |
+|---|---:|---:|---|
+| `Makefile` | control | 61 | `10e6833bcc11ae1f46f78d287adedb3e44d435b73958f85cdc9624837c19f450` |
+| `OPERATIONAL_STATE.md` | control | 16368 | `059579657d56d4824fb09524af73ad32b75546e8bfd84f606e3144e295590043` |
+| `README.md` | control | 4414 | `81900dcbad46524814dec3560f6c61efc69b47e3b5093611b113cf9791c7e8de` |
+| `RELEASE_NOTES.md` | control | 2534 | `2e8a5b4fddc6d769763b91a54e447c9efa5128dd827faf310b38bd3f07329ef8` |
+| `examples/01-dom-card-battler/README.md` | example | 858 | `a5020e099c45be6fffe6bee008393d6f4046e635eb408b41e8e0cb9a994890ad` |
+| `examples/01-dom-card-battler/architecture.project.json` | example | 1158 | `cc431ec37286cba10f0e5481a6949a9e0e46e7ed5ba16de8b90e285779d0f15b` |
+| `examples/02-canvas-arcade-dodger/README.md` | example | 822 | `5e7b9652428a149f5ad1e62e614835a78cd75a5d507626cf9efb905f3d03ac96` |
+| `examples/02-canvas-arcade-dodger/architecture.project.json` | example | 1161 | `9487e735d4ffe0b82b3a3be8c36d98962e1e29d65dcccc9aa4a90cc25de96b79` |
+| `examples/03-fixed-platformer/README.md` | example | 880 | `44cddadb40687f1ad7247aefd6313fd9b5a20d5a8b1fd21fdb3d7dfc5e93c1d5` |
+| `examples/03-fixed-platformer/architecture.project.json` | example | 1171 | `20a972fc652f9e5b0eaa8cb9caad7739ff80113bc360b3d8e7b5cb3edf30acc4` |
+| `examples/04-generated-art-adventure/README.md` | example | 924 | `e3470aafb3461a7ce3b5ffb12c66402334146bdcbce4b0a392652ea2dceedbe7` |
+| `examples/04-generated-art-adventure/architecture.project.json` | example | 1205 | `a7b4dc5ca21117418c2653b6e4ff51e96b358755718025aeef11a47cf287b2d8` |
+| `examples/04-generated-art-adventure/assets/manifest.json` | example | 58 | `b106230bf95cda1dc875fd0b04d4a0d36c48fb975a769ca04e831e33033cc460` |
+| `examples/05-webgl-particle-arena/README.md` | example | 887 | `96663a59b020607a525d93a0615e17c1cde8937fa790ec7087f62559d7156652` |
+| `examples/05-webgl-particle-arena/architecture.project.json` | example | 1167 | `0e3dc6522b448ad3d3353aa945e7a7aac24405e3d8f0934eb3de4c925af8add4` |
+| `examples/06-accessible-puzzle-museum/README.md` | example | 794 | `178b502402ce433c5fa78fa48678d35108054d3a19575a0939872400f5664158` |
+| `examples/06-accessible-puzzle-museum/architecture.project.json` | example | 1166 | `481cfb58b954207388699710af0e63c36fdc0b204215eec940fe6160366d2bc3` |
+| `examples/07-ik-creature-sandbox/README.md` | example | 923 | `52d43f48ce2919b051d4793f47d93ced85c8c5103b72aa1f4c431d9a429353b9` |
+| `examples/07-ik-creature-sandbox/architecture.project.json` | example | 1177 | `33ff69d2e6cdba581e24d73fdc19b42feb083c354e7c4580d80237ae148a38c0` |
+| `examples/07-ik-creature-sandbox/assets/manifest.json` | example | 58 | `b106230bf95cda1dc875fd0b04d4a0d36c48fb975a769ca04e831e33033cc460` |
+| `examples/08-swarm-collision-lab/README.md` | example | 852 | `cf424121934d018f356fc16a5abf619a4d9532c5542679f89d98d561a310137c` |
+| `examples/08-swarm-collision-lab/architecture.project.json` | example | 1157 | `2df2dcbc2d3f0488df1a6c2430f7f7ed5b87e2d42296a3f730e7a4f6c73d64a5` |
+| `examples/09-offline-strategy-sim/README.md` | example | 898 | `df285f3b5787004b2aad55990ad74029ec7c5e896ae09ebc5794623dcb445607` |
+| `examples/09-offline-strategy-sim/architecture.project.json` | example | 1158 | `3601261b08a7e80ca704f9958381ac81840b7fe61cc044562b764dff263e7fcb` |
+| `examples/10-shared-memory-field/README.md` | example | 936 | `20b875cb62dc4b0d9c4bfeba4f76f12e644a70d3cbc8f2719243b26bf61838de` |
+| `examples/10-shared-memory-field/architecture.project.json` | example | 1304 | `8c9767cdd6924d88805aea8b68734f5ad498f309db6c987d6080af07278528d1` |
+| `final/MODERN_2D_BROWSER_GAME_ARCHITECTURE_TOOLKIT_FINAL.docx` | final | 52816 | `88d7db6c93c4dbaad787d287496153e5190595be8c80668ba498e8d749832492` |
+| `final/MODERN_2D_BROWSER_GAME_ARCHITECTURE_TOOLKIT_FINAL.md` | final | 71807 | `7ff8d558fa844f912876f599482eaf9157f9d53daca26ebb3562e4dbd195d079` |
+| `final/MODERN_2D_BROWSER_GAME_ARCHITECTURE_TOOLKIT_FINAL.pdf` | final | 875827 | `79c6b84848df58cbddb2876964230947a231329f34805cb4652afb3e8d9c01e9` |
+| `qa/DOCX_QA.md` | qa | 1409 | `ab7c3cbe3e8b83b9f0936643c5424262ea0aec50a95bd878c3d7222031073856` |
+| `qa/RELEASE_QA.md` | qa | 1500 | `26337b54fc03db3ee4db7415d900ea52719b1518f53bc0eb92de74f7bd9028b6` |
+| `qa/REQUIREMENTS.md` | qa | 3347 | `36b098fdc543161c06e30320db44bd15ddf07a4b7efa388e15b414c209153a9c` |
+| `qa/SOURCE_VERIFICATION.md` | qa | 2448 | `46d0dab3d183eda84147c0961a97bfff4ebc8ad711557c7d0b35a55098bdbe91` |
+| `qa/browser-smoke-dependency-check.log` | qa | 100 | `7caad261e18d55e31013d156beef71717c8fe621780f33bb08dc7461a52aa07d` |
+| `qa/docx-a11y.json` | qa | 213 | `3da77744a26cee7e3aa3f1ec1f473b34d902644eca47d8989f3413a9fa6f29b9` |
+| `qa/docx-a11y.txt` | qa | 119 | `15e43b2499c3a45ffd708298350635ba8f43aca6dd3a89f3184d43cb9b781093` |
+| `qa/docx-heading-audit.txt` | qa | 1575 | `06773b081197a1f11ed9b8679a561b3163ad56ec8399e1660dbb3f8e6edec668` |
+| `qa/docx-style-lint.txt` | qa | 848 | `c19e1b2882b1faa40367bdc60aee050bfe9964b31c42feac0fb5cb70b9e016cf` |
+| `qa/example04-orchestrator.log` | qa | 1777 | `1e96ff6af881707651d24e690a4f24e7894d91ac93116b8e30bbd7696e295039` |
+| `qa/example10-orchestrator.log` | qa | 1244 | `e8aef9ebf3879c7c1c1d47ed19c74161c2168b3ccb409b571fbd9ac0bdf371df` |
+| `qa/packaged-selftest.log` | qa | 389 | `0bf874fca91e59df462fb94ca966feec12ded561bbd730bb72cfb5ada1f8de05` |
+| `qa/toolkit-selftest.log` | qa | 389 | `0bf874fca91e59df462fb94ca966feec12ded561bbd730bb72cfb5ada1f8de05` |
+| `schemas/architecture-project.schema.json` | schema | 4086 | `26ab442b347aaa4a978408b7cd8b73b160b75774cba6611db74fa0ce3572842d` |
+| `schemas/asset-manifest.schema.json` | schema | 1740 | `92e44561879da865465907fa5b24d3cc200c8521e77ebbc0397749eb17e1c0cc` |
+| `source/source_revision.md` | source | 24743 | `8940a7da0542c995101f11d118c162e86b3b07435cd3fedd973f01858830f9d0` |
+| `templates/ADR.md` | template | 739 | `b7bb7866a92b9e03b3b460446b28af74d7b897c8c2c41c1472e646b36feed097` |
+| `templates/AI_TASK_PACKET.md` | template | 890 | `099a61fcd40b8bf5cd4f5fed3c84b2f8dbe6b4fa9a95b9013e66487561932347` |
+| `templates/VALIDATION_REPORT.md` | template | 510 | `fa1ecd89aca1d2c83a19f0352d3f3723c6eee76d0e614109715d6a4621c88761` |
+| `templates/architecture.project.json` | template | 1047 | `0ab4f12a59cd8348b9203fc608d5fec17d8d80f2f19bdfb61bb99bdecb8a3f58` |
+| `templates/github-actions-architecture.yml` | template | 589 | `28223797bbdd2d96ee1d046347637b3360f905c630339a15f7f89b8462ece9b5` |
+| `tools/LINTER_RULES.md` | tool | 2493 | `5273824419b7d0015bb1e6fc2be927e9850143a4aff5664fb99ba2b494d91551` |
+| `tools/__pycache__/architecture_linter.cpython-313.pyc` | tool | 12801 | `e2b52e7e694d6b9690740029c567b04ccc726fba123b65abcdc44bc931e46703` |
+| `tools/__pycache__/architecture_preflight.cpython-313.pyc` | tool | 8018 | `3c970a4a5e0e4ac8ee9f31b5c15620229365776c074fc06f2b20a9335e0dcbfd` |
+| `tools/__pycache__/bootstrap_project.cpython-313.pyc` | tool | 2733 | `b3d120435706c7020d7648d4089002ae99df91367a147732a7ea0d1599f1662c` |
+| `tools/__pycache__/checklist_generator.cpython-313.pyc` | tool | 2844 | `d2dcd74a160892e64ba9e442c57745ee850fe21fed66f322eb0220d3d84969a4` |
+| `tools/__pycache__/common.cpython-313.pyc` | tool | 7206 | `de4e9ba6edacce664bdc72e090ae2b46e30138ddf55efc38de6c58318936d3cc` |
+| `tools/__pycache__/manifest_validator.cpython-313.pyc` | tool | 7855 | `85f5a1cea234b96a7fe71e039a01289528b132f94016d881043af116e0c1ce8f` |
+| `tools/__pycache__/run_project_checks.cpython-313.pyc` | tool | 8416 | `60c99921487aed80303fb9d46a74623fe2c45904b61da525abfb9a85251e7bb4` |
+| `tools/__pycache__/toolkit_selftest.cpython-313.pyc` | tool | 6965 | `221cfce704f003dde0659f5c3e8864c177e82ca0a357f2b9ee3734e3ddb85fe9` |
+| `tools/architecture_linter.py` | tool | 7713 | `5100eacd499e869b7a90963a9204ad82cb601b28c9c7358df0c09af7f5048ad0` |
+| `tools/architecture_preflight.py` | tool | 6564 | `6853213fd54165f4c63d257b316ed20dbcc592d585426622df643384620fbcc2` |
+| `tools/bootstrap_project.py` | tool | 1529 | `9efb26c78151c4cc2a57d071bdfd28e10139ae015edb97efe4587926c78e7204` |
+| `tools/browser_smoke.mjs` | tool | 2323 | `68b5a813c236992499537be2f282dee06e9697d88b36d3c2937c16f70c136c4f` |
+| `tools/checklist_generator.py` | tool | 1836 | `8cbf4dde73b6ac9b8628658b40d7ac19f52d71581c7df84c6f541a7442695f7b` |
+| `tools/common.py` | tool | 4040 | `bcede2689ee1f0af3f3fbc4a6ae1688215ea435e7ade432e76fcaead19010cf7` |
+| `tools/manifest_validator.py` | tool | 5066 | `14e7b3077b82333318ddf4ea51088a24f234af34a876d0f1f0ca3379cd2ee514` |
+| `tools/run_project_checks.py` | tool | 5136 | `4df96995f7029a70a50fe73c5c1ebadb25bcac1745c93d48bea1ccc20f135b76` |
+| `tools/toolkit_selftest.py` | tool | 4246 | `4a8b1985656e7bdfc554714dc544a5007d3f1a3938334ecfc8ebe25073657816` |
