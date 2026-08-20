@@ -54,7 +54,7 @@
       "capabilities": ["webgl2", "instancing", "context-loss", "reduced-effects"],
       "summary": "A particle count large enough to justify GPU instancing, with compile errors, context loss, and quality controls made visible.",
       "why": "Thousands of independently moving particles are a GPU problem. Canvas 2D fill would hide the architecture being demonstrated. WebGL2 instancing is used because the visual load requires it, not as a default engine.",
-      "status": "not-built"
+      "status": "ready"
     },
     {
       "id": "06-accessible-puzzle-museum",

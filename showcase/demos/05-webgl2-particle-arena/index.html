@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WebGL2 Particle Arena</title>
   <link rel="stylesheet" href="../../shared/demo-shell.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="demo-shell" data-demo-root>
     <header>
-      <p class="meta">05-webgl2-particle-arena</p>
+      <p class="meta">05 · WebGL2 · GLSL ES 3.00 · instanced draw</p>
       <h1>WebGL2 Particle Arena</h1>
+      <p>Pointer pulls the field. Instancing is used because the count makes individual draws pointless.</p>
     </header>
-    <section class="panel">
-      <p class="placeholder-note">This demonstration is not built yet.</p>
+    <section class="panel hud">
+      <p>Particles <strong id="count">0</strong></p>
+      <p>Frame ms <strong id="frametime">0</strong></p>
+      <p>Quality <strong id="quality">high</strong></p>
+      <button type="button" id="quality-btn">Reduced effects</button>
     </section>
+    <div id="message" class="panel demo-error hidden" role="alert"></div>
+    <canvas id="gl" width="640" height="360" aria-label="Particle arena"></canvas>
   </main>
   <script type="module" src="./main.js"></script>
 </body>

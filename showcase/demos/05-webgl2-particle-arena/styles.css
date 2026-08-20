@@ -1,0 +1,18 @@
+.hud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1rem;
+  align-items: center;
+}
+
+.hud p { margin: 0; }
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #0b141a;
+  touch-action: none;
+}
+
+.hidden { display: none !important; }
